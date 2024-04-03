@@ -5,6 +5,9 @@ import HomeIcon from '@mui/icons-material/Home';
 import NewspaperIcon from '@mui/icons-material/Newspaper';
 import ContactPageIcon from '@mui/icons-material/ContactPage';
 import ThemeModeButton from './ThemeModeButton';
+import HomeTab from './HomeTab';
+import BlogTab from './BlogTab';
+import ContactTab from './ContactTab';
 
 export default () => {
   const [tabValue, setTabValue] = React.useState<string>('0');
@@ -27,9 +30,9 @@ export default () => {
           <ThemeModeButton />
         </Box>
       </Box>
-      <TabPanel value="0">Item 0</TabPanel>
-      <TabPanel value="1">Item 1</TabPanel>
-      <TabPanel value="2">Item 2</TabPanel>
+      <TabPanel value="0"><HomeTab/></TabPanel>
+      <TabPanel value="1"><BlogTab/></TabPanel>
+      <TabPanel value="2"><ContactTab/></TabPanel>
     </TabContext>
   );
 };

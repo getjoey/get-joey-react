@@ -29,6 +29,9 @@ export const CustomThemeProviderWithContext = ({ children }: { children: ReactNo
     palette: {
       mode: isLightTheme ? 'light' : 'dark',
     },
+    typography: {
+      fontFamily: 'Arial, sans-serif',
+    },
   });
 
   return (

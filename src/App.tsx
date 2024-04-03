@@ -1,7 +1,7 @@
 import { Box, CssBaseline } from '@mui/material';
 import React from 'react';
 import NavigationTabs from './Components/NavigationTabs';
-import { CustomThemeProviderWithContext } from './Theme/ThemeContext';
+import { CustomThemeProviderWithContext } from './Context/ThemeContext';
 
 function App() {
 
