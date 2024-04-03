@@ -21,7 +21,7 @@ export default () => {
       <Box sx={{ borderBottom: 1, borderColor: 'divider', display: 'flex', justifyContent: 'space-between' }}>
         <Box>
           <TabList onChange={handleChange} aria-label="lab API tabs example">
-            <Tab icon={<HomeIcon />} value="0" />
+            <Tab icon={<HomeIcon/>} value="0" />
             <Tab icon={<NewspaperIcon />} value="1" />
             <Tab icon={<ContactPageIcon />} value="2" />
           </TabList>
@@ -30,7 +30,7 @@ export default () => {
           <ThemeModeButton />
         </Box>
       </Box>
-      <TabPanel value="0"><HomeTab/></TabPanel>
+      <TabPanel value="0"><HomeTab setTabValue={setTabValue}/></TabPanel>
       <TabPanel value="1"><BlogTab/></TabPanel>
       <TabPanel value="2"><ContactTab/></TabPanel>
     </TabContext>
