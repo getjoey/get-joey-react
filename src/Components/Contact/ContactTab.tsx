@@ -6,7 +6,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 export default () => {
 
   return (
-    <Box component={Paper} elevation={4} sx={{ p: 2 }} display="flex" flexDirection={"column"} rowGap={2}>
+    <Box component={Paper} elevation={2} sx={{ p: 2 }} display="flex" flexDirection={"column"} rowGap={2}>
       <Box>
         <Typography variant="h5" component="h2" sx={{ fontWeight: 'bold' }}>Contact</Typography>
       </Box>
