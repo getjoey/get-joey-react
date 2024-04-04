@@ -1,11 +1,16 @@
 {
   "files": {
-    "main.js": "/static/js/main.f2043dfc.js",
-    "static/media/nlpGameScreenshot.png": "/static/media/nlpGameScreenshot.8c4c3c9b83fe8d4a5d72.png",
+    "main.js": "/static/js/main.e973612c.js",
+    "static/media/nlpGameSC3.png": "/static/media/nlpGameSC3.685847f6945061e973d6.png",
+    "static/media/nlpGameSC6.png": "/static/media/nlpGameSC6.453a08caac124febb9cf.png",
+    "static/media/nlpGameSC4.png": "/static/media/nlpGameSC4.49d8d3c60c51e3c5ae37.png",
+    "static/media/nlpGameSC1.png": "/static/media/nlpGameSC1.097c36f8738040a1b01a.png",
+    "static/media/nlpGameSC2.png": "/static/media/nlpGameSC2.381bd1c89ee871e9e7a7.png",
+    "static/media/nlpGameSC5.png": "/static/media/nlpGameSC5.e3ac6f5d2cd27ccf07a1.png",
     "index.html": "/index.html",
-    "main.f2043dfc.js.map": "/static/js/main.f2043dfc.js.map"
+    "main.e973612c.js.map": "/static/js/main.e973612c.js.map"
   },
   "entrypoints": [
-    "static/js/main.f2043dfc.js"
+    "static/js/main.e973612c.js"
   ]
 }
