@@ -1,8 +1,13 @@
 import { Box, Chip, IconButton, Paper, Stack, Tooltip, Typography } from "@mui/material"
 import GitHubIcon from '@mui/icons-material/GitHub';
 
-import nlpGameScreenshot from "../../assets/photos/nlpGameScreenshot.png";
-import ImageModal from "../other/ImageModal";
+import nlpGameScreenshot1 from "../../assets/photos/nlpGameSC1.png";
+import nlpGameScreenshot2 from "../../assets/photos/nlpGameSC2.png";
+import nlpGameScreenshot3 from "../../assets/photos/nlpGameSC3.png";
+import nlpGameScreenshot4 from "../../assets/photos/nlpGameSC4.png";
+import nlpGameScreenshot5 from "../../assets/photos/nlpGameSC5.png";
+import nlpGameScreenshot6 from "../../assets/photos/nlpGameSC6.png";
+import ImageModalCarousel from "../other/ImageModalCarousel";
 
 type Project = {
   title: string,
@@ -14,7 +19,7 @@ type Project = {
 
 const Project = ({ title, info, languages, photoLinks, githubLink }: Project) => {
   return (
-    <Box padding={2} margin={2} component={Paper} elevation={1} display="flex" flexDirection="column" rowGap={1}>
+    <Box p={2} mb={2} component={Paper} elevation={1} display="flex" flexDirection="column" rowGap={1}>
       <Box display="flex" flexDirection={"row"}>
         <Typography variant="h6" component="h3" sx={{ fontWeight: 'bold' }}>{title}</Typography>
         {!githubLink ? <></> :
@@ -38,7 +43,7 @@ const Project = ({ title, info, languages, photoLinks, githubLink }: Project) =>
         </Typography>
       </Box>
       <Box>
-        <ImageModal photoLinks={photoLinks}/>
+        <ImageModalCarousel photoLinks={photoLinks}/>
       </Box>
       <Box display="flex" flexDirection="row">
         <Stack direction="row" spacing={1} justifyContent="center" flexWrap="wrap" gap={1}>
@@ -73,7 +78,7 @@ export default () => {
       various colored lenses and mirrors to overcome obstacles, collect coins, and energize a black hole. 
       Unfortunately, due to inactivity, the game has been removed from the Android store.`,
       languages: ["C#", "Unity", "Android"],
-      photoLinks: [nlpGameScreenshot],
+      photoLinks: [nlpGameScreenshot1,nlpGameScreenshot2,nlpGameScreenshot3,nlpGameScreenshot4,nlpGameScreenshot5,nlpGameScreenshot6],
       githubLink: "",
     }
   ];
