@@ -67,12 +67,11 @@ export default () => {
     },
     {
       title: "Android Puzzle Game",
-      info: `Over the holidays, I wanted to learn Unity game making engine, 
-      as it is great for running simulations and bringing ideas to life. 
-      So I created a fun little puzzle game that anyone can download for free on android. 
-      Unfortunately game has been removed from the android store do to inactivity. 
-      The Goal of the game is to reflect light through different colored lenses and mirrors 
-      to get through all barriers, collect all coins, and charge up the black hole.`,
+      info: `During the holidays, I decided to explore the Unity game engine, known for its ability 
+      to run simulations and bring creative ideas to life. I developed a fun little puzzle game that 
+      was available for free download on Android. The objective of the game is to manipulate light using 
+      various colored lenses and mirrors to overcome obstacles, collect coins, and energize a black hole. 
+      Unfortunately, due to inactivity, the game has been removed from the Android store.`,
       languages: ["C#", "Unity", "Android"],
       photoLinks: [nlpGameScreenshot],
       githubLink: "",
