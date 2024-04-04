@@ -5,9 +5,9 @@ import HomeIcon from '@mui/icons-material/Home';
 import NewspaperIcon from '@mui/icons-material/Newspaper';
 import ContactPageIcon from '@mui/icons-material/ContactPage';
 import ThemeModeButton from './ThemeModeButton';
-import HomeTab from './Home/HomeTab';
-import BlogTab from './Blog/BlogTab';
-import ContactTab from './Contact/ContactTab';
+import HomeTab from './home/HomeTab';
+import BlogTab from './blog/BlogTab';
+import ContactTab from './contact/ContactTab';
 
 export default () => {
   const [tabValue, setTabValue] = React.useState<string>('0');

@@ -1,7 +1,7 @@
 import LightModeIcon from '@mui/icons-material/LightMode';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import { IconButton } from '@mui/material';
-import { useThemeContext } from '../Context/ThemeContext';
+import { useThemeContext } from '../context/ThemeContext';
 
 
 export default () => {
