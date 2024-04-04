@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "/static/js/main.5c4debf4.js",
+    "main.js": "/static/js/main.f2043dfc.js",
     "static/media/nlpGameScreenshot.png": "/static/media/nlpGameScreenshot.8c4c3c9b83fe8d4a5d72.png",
     "index.html": "/index.html",
-    "main.5c4debf4.js.map": "/static/js/main.5c4debf4.js.map"
+    "main.f2043dfc.js.map": "/static/js/main.f2043dfc.js.map"
   },
   "entrypoints": [
-    "static/js/main.5c4debf4.js"
+    "static/js/main.f2043dfc.js"
   ]
 }
