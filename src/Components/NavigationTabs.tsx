@@ -32,7 +32,7 @@ export default () => {
       </Box>
       <TabPanel value="0"><HomeTab setTabValue={setTabValue}/></TabPanel>
       <TabPanel value="1"><BlogTab/></TabPanel>
-      <TabPanel value="2"><ContactTab/></TabPanel>
+      <TabPanel value="2"><ContactTab setTabValue={setTabValue}/></TabPanel>
     </TabContext>
   );
 };
