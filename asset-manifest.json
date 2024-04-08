@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/static/js/main.14bb90bf.js",
+    "main.js": "/static/js/main.5da61689.js",
     "static/media/nlpGameSC3.png": "/static/media/nlpGameSC3.685847f6945061e973d6.png",
     "static/media/nlpGameSC6.png": "/static/media/nlpGameSC6.453a08caac124febb9cf.png",
     "static/media/nlpGameSC4.png": "/static/media/nlpGameSC4.49d8d3c60c51e3c5ae37.png",
@@ -9,9 +9,9 @@
     "static/media/nlpGameSC5.png": "/static/media/nlpGameSC5.e3ac6f5d2cd27ccf07a1.png",
     "static/media/joseph.jpeg": "/static/media/joseph.7a7e4ddf00165bf0ef1f.jpeg",
     "index.html": "/index.html",
-    "main.14bb90bf.js.map": "/static/js/main.14bb90bf.js.map"
+    "main.5da61689.js.map": "/static/js/main.5da61689.js.map"
   },
   "entrypoints": [
-    "static/js/main.14bb90bf.js"
+    "static/js/main.5da61689.js"
   ]
 }
