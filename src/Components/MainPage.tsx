@@ -1,15 +1,9 @@
 import { Box, IconButton, Tab, Typography } from '@mui/material';
 import React from 'react';
 import { useTheme } from '@mui/material/styles';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import AboutSection from './home/AboutSection';
 import ProjectsSection from './home/ProjectsSection';
 import SkillSection from './home/SkillSection';
-import about from "../assets/icons/about.png";
-import skills from "../assets/icons/skills.png";
-import projects from "../assets/icons/projects.png";
-import joseph from "../assets/photos/joseph.jpeg";
 import Header from './other/Header';
 
 export default () => {

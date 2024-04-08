@@ -1,4 +1,4 @@
-import { Box, Chip, IconButton, Paper, Stack, Tooltip, Typography } from "@mui/material"
+import { Box, Chip, Grid, IconButton, Paper, Stack, Tooltip, Typography } from "@mui/material"
 import GitHubIcon from '@mui/icons-material/GitHub';
 
 import nlpGameScreenshot1 from "../../assets/photos/nlpGameSC1.png";
@@ -19,38 +19,42 @@ type Project = {
 
 const Project = ({ title, info, languages, photoLinks, githubLink }: Project) => {
   return (
-    <Box p={2} mb={2} borderTop="1px solid #e0e0e0" display="flex" flexDirection="column" rowGap={1}>
-      <Box display="flex" flexDirection={"row"}>
-        <Typography variant="h6" component="h3" sx={{ fontWeight: 'bold' }}>{title}</Typography>
-        {!githubLink ? <></> :
-          <Tooltip title="View on GitHub">
-            <IconButton href={githubLink} target="_blank" rel="noopener noreferrer"
-              sx={{
-                color: 'orange',
-                '&:hover': {
-                  backgroundColor: 'grey'
-                },
-                mt: -1.5
-              }}>
-              <GitHubIcon fontSize="large" />
-            </IconButton>
-          </Tooltip>
-        }
-      </Box>
-      <Box>
+    <Grid container spacing={2} borderTop="1px solid #e0e0e0" p={2} mb={2}>
+      <Grid item xs={12}>
+        <Box display="flex" flexDirection={"row"}>
+          <Typography variant="h6" component="h3" sx={{ fontWeight: 'bold' }}>{title}</Typography>
+          {!githubLink ? <></> :
+            <Tooltip title="View on GitHub">
+              <IconButton href={githubLink} target="_blank" rel="noopener noreferrer"
+                sx={{
+                  color: 'orange',
+                  '&:hover': {
+                    backgroundColor: 'grey'
+                  },
+                  mt: -1.5
+                }}>
+                <GitHubIcon fontSize="large" />
+              </IconButton>
+            </Tooltip>
+          }
+        </Box>
+      </Grid>
+      <Grid item xs={12} lg={6}>
         <Typography variant="body2">
           {info}
         </Typography>
-      </Box>
-      <Box>
-        <ImageModalCarousel photoLinks={photoLinks}/>
-      </Box>
-      <Box display="flex" flexDirection="row">
-        <Stack direction="row" spacing={1} justifyContent="center" flexWrap="wrap" gap={1}>
-          {languages.map(lang => <Chip key={lang} label={lang} size="small" />)}
-        </Stack>
-      </Box>
-    </Box>
+      </Grid>
+      <Grid item xs={12} lg={6}>
+        <ImageModalCarousel photoLinks={photoLinks} />
+      </Grid>
+      <Grid item xs={12}>
+        <Box display="flex" flexDirection="row">
+          <Stack direction="row" spacing={1} justifyContent="center" flexWrap="wrap" gap={1}>
+            {languages.map(lang => <Chip key={lang} label={lang} size="small" />)}
+          </Stack>
+        </Box>
+      </Grid>
+    </Grid>
   )
 };
 
@@ -76,9 +80,23 @@ export default () => {
       was available for free download on Android. The objective of the game is to manipulate light using 
       various colored lenses and mirrors to overcome obstacles, collect coins, and energize a black hole.`,
       languages: ["C#", "Unity", "Android"],
-      photoLinks: [nlpGameScreenshot1,nlpGameScreenshot2,nlpGameScreenshot3,nlpGameScreenshot4,nlpGameScreenshot5,nlpGameScreenshot6],
+      photoLinks: [nlpGameScreenshot1, nlpGameScreenshot2, nlpGameScreenshot3, nlpGameScreenshot4, nlpGameScreenshot5, nlpGameScreenshot6],
       githubLink: "",
     },
+    // {
+    //   title: "RaceCar AI",
+    //   info: `A fun little project, to attempt to learn more about genetic AI, where cars randomly drive through checkpoints where they are awarded, and cycle keeps on repeating with each best driver being replicated and split into another 100 random cars. Eventually the car is able to finish the track, and will continue to improve.`,
+    //   languages: ['Java'],
+    //   photoLinks: ["https://raw.githubusercontent.com/getjoey/raceCarAi/master/carA.png", "https://raw.githubusercontent.com/getjoey/raceCarAi/master/carB.png"],
+    //   githubLink: "https://github.com/getjoey/raceCarAi",
+    // },
+    // {
+    //   title: "Pixel Drawer",
+    //   info: `Pixel art creator, like paint, but for blocky pixel art like images`,
+    //   languages: ["Java"],
+    //   photoLinks: ["https://raw.githubusercontent.com/getjoey/getjoey.github.io-old/master/images/pixeldrawer2.png", "https://raw.githubusercontent.com/getjoey/getjoey.github.io-old/master/images/pixeldrawer.png"],
+    //   githubLink: "https://github.com/getjoey/PixelDrawer1.1",
+    // },
     {
       title: "Under Construction",
       info: `I am adding in more projects (April 8th, 2024)`,
@@ -91,7 +109,7 @@ export default () => {
 
   return (
     <Box p={1} paddingLeft={2} paddingRight={2} component={Paper} elevation={2}>
-      <Box sx={{ textAlign: "left", mb: 2, ml:1 }}>
+      <Box sx={{ textAlign: "left", mb: 3, ml: 1 }}>
         <Typography variant="h5" component="h2" sx={{ fontWeight: 'bold' }}>Project Showcase</Typography>
       </Box>
       {projectList.map(p => <Project title={p.title} info={p.info} photoLinks={p.photoLinks} languages={p.languages} githubLink={p.githubLink} />)}

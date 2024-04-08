@@ -31,6 +31,9 @@ export const CustomThemeProviderWithContext = ({ children }: { children: ReactNo
       text: {
         primary: '#E5E4E2', // Default text color
       },
+      background: {
+        // paper: '#000A00', // Set default background color
+      },
     },
     typography: {
       fontFamily: 'Arial, sans-serif',

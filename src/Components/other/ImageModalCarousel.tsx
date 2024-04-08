@@ -66,7 +66,7 @@ export default function PhotoCarousel({ photoLinks }: { photoLinks: string[] }) 
                             <img
                                 src={photoLink}
                                 alt={`Photo ${index + 1}`}
-                                style={{ maxHeight: '250px', maxWidth: "100%", cursor: 'pointer' }}
+                                style={{ maxHeight: '360px', maxWidth: "100%", cursor: 'pointer' }}
                                 onClick={() => handleClickOpen(photoLink)}
                             />
                         </div>

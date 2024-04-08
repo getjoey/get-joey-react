@@ -38,7 +38,7 @@ const MatrixRain = ({ children }: { children: ReactNode }) => {
         const fontSize = 16;
         const columns = canvas.width / fontSize;
         const rainDrops: any[] = Array.from({ length: columns }).fill(1);
-
+        speedRef.current = 2;
         // The drawing function
         const draw = () => {
             if (frameCount % speedRef.current === 0) { // Update only every 'speed' frames
@@ -53,6 +53,9 @@ const MatrixRain = ({ children }: { children: ReactNode }) => {
                     context.fillText(text, i * fontSize, rainDrops[i] * fontSize);
 
                     if (rainDrops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+                        if(!showSite) {
+                            speedRef.current = 10;
+                        }
                         rainDrops[i] = 0;
                     }
                     rainDrops[i]++;
@@ -73,9 +76,6 @@ const MatrixRain = ({ children }: { children: ReactNode }) => {
         setTimeout(() => {
             setShowSite(true);
         }, 80);
-        setTimeout(() => {
-            speedRef.current = 2.5;
-        }, 1000);
         // Clean up the canvas on component unmount
         return () => {
             window.removeEventListener('resize', handleResize);

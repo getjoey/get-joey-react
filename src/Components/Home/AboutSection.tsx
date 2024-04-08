@@ -16,22 +16,22 @@ export default () => {
           flexDirection: 'column', // Children are stacked vertically
           alignItems: 'center', // Horizontal centering
           justifyContent: 'center', // Vertical centering
-          height: { xs: "200px", md: "auto" }, // Adjust the height as needed
+          // height: { xs: "200px", md: "auto" }, // Adjust the height as needed
         }}>
         <Box
           sx={{
             p:2,
             borderRadius: '50%',
             width: "100%",
-            maxWidth: "200px",
-            height: "200px", // Explicit height for the image box
+            maxWidth: "180px",
+            height: "180px", // Explicit height for the image box
             objectFit: 'cover', // Adjust objectFit as necessary
           }}
           component="img"
           src={joseph}
         />
       </Box>
-      <Box sx={{ width: { xs: "100%", md: "75%" } }}>
+      <Box display="flex" flexDirection="column" sx={{ width: { xs: "100%", md: "75%" }, mt:{xs:0, md:2} }}>
         {/* <Box sx={{ ml: 2, mb: 2 }}>
           <Typography variant="h5" component="h2" sx={{ fontWeight: 'bold' }}>About</Typography>
         </Box> */}
