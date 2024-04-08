@@ -1,8 +1,6 @@
 {
   "files": {
-    "main.js": "/static/js/main.4f70cd78.js",
-    "static/js/693.c70b9a4d.chunk.js": "/static/js/693.c70b9a4d.chunk.js",
-    "static/js/659.a033f8e0.chunk.js": "/static/js/659.a033f8e0.chunk.js",
+    "main.js": "/static/js/main.14bb90bf.js",
     "static/media/nlpGameSC3.png": "/static/media/nlpGameSC3.685847f6945061e973d6.png",
     "static/media/nlpGameSC6.png": "/static/media/nlpGameSC6.453a08caac124febb9cf.png",
     "static/media/nlpGameSC4.png": "/static/media/nlpGameSC4.49d8d3c60c51e3c5ae37.png",
@@ -11,11 +9,9 @@
     "static/media/nlpGameSC5.png": "/static/media/nlpGameSC5.e3ac6f5d2cd27ccf07a1.png",
     "static/media/joseph.jpeg": "/static/media/joseph.7a7e4ddf00165bf0ef1f.jpeg",
     "index.html": "/index.html",
-    "main.4f70cd78.js.map": "/static/js/main.4f70cd78.js.map",
-    "693.c70b9a4d.chunk.js.map": "/static/js/693.c70b9a4d.chunk.js.map",
-    "659.a033f8e0.chunk.js.map": "/static/js/659.a033f8e0.chunk.js.map"
+    "main.14bb90bf.js.map": "/static/js/main.14bb90bf.js.map"
   },
   "entrypoints": [
-    "static/js/main.4f70cd78.js"
+    "static/js/main.14bb90bf.js"
   ]
 }
