@@ -72,7 +72,7 @@ const MatrixRain = ({ children }: { children: ReactNode }) => {
 
         setTimeout(() => {
             setShowSite(true);
-        }, 80);
+        }, 600);
         setTimeout(() => {
             speedRef.current = 2.5;
         }, 1000);
@@ -90,7 +90,7 @@ const MatrixRain = ({ children }: { children: ReactNode }) => {
             </Box>
 
             <Box position="absolute" top={0} left={0} right={0} bottom={0} style={{
-                transition: 'opacity 1.5s',
+                transition: 'opacity 2.5s',
                 opacity: showSite ? 1 : 0, // Fades in when showSite is true
                 pointerEvents: 'auto'
             }}>
