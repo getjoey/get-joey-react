@@ -44,8 +44,15 @@ export default function PhotoCarousel({ photoLinks }: { photoLinks: string[] }) 
 
 
     return (
-        <Box margin={1} sx={{ display: 'flex', justifyContent: 'center' }}>
-            <Box component={Paper} padding={1} elevation={1} sx={{ width: {xs: "100%", md:"500px"}}}>
+        <Box sx={{ display: 'flex', justifyContent: 'center' }} >
+            <Box
+                component={Paper}
+                padding={0} 
+                elevation={4} 
+                sx={{ 
+                    width: { xs: "100%", md: "500px" },
+                    backgroundColor: theme.palette.common.black 
+                }}>
                 <AutoPlaySwipeableViews
                     axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
                     index={selectedImageIndex}
@@ -59,13 +66,13 @@ export default function PhotoCarousel({ photoLinks }: { photoLinks: string[] }) 
                             <img
                                 src={photoLink}
                                 alt={`Photo ${index + 1}`}
-                                style={{ maxHeight: '200px', maxWidth:"100%", cursor: 'pointer' }}
+                                style={{ maxHeight: '250px', maxWidth: "100%", cursor: 'pointer' }}
                                 onClick={() => handleClickOpen(photoLink)}
                             />
                         </div>
                     ))}
                 </AutoPlaySwipeableViews>
-                <Box sx={{ display: 'flex', justifyContent: 'center', flexDirection:"row" }}>
+                <Box sx={{ display: 'flex', justifyContent: 'center', flexDirection: "row" }}>
                     <MobileStepper
                         steps={photoLinks.length}
                         position="static"
@@ -84,7 +91,7 @@ export default function PhotoCarousel({ photoLinks }: { photoLinks: string[] }) 
                                 {theme.direction === 'rtl' ? <KeyboardArrowRight /> : <KeyboardArrowLeft />}
                             </IconButton>
                         }
-                        sx={{ width: {xs: "100%", md:"500px"}, height:"50px" }}
+                        sx={{ width: { xs: "100%", md: "500px" }, height: "50px" }}
                     />
                 </Box>
             </Box>

@@ -19,7 +19,7 @@ type Project = {
 
 const Project = ({ title, info, languages, photoLinks, githubLink }: Project) => {
   return (
-    <Box p={2} mb={2} component={Paper} elevation={1} display="flex" flexDirection="column" rowGap={1}>
+    <Box p={2} mb={2} borderTop="1px solid #e0e0e0" display="flex" flexDirection="column" rowGap={1}>
       <Box display="flex" flexDirection={"row"}>
         <Typography variant="h6" component="h3" sx={{ fontWeight: 'bold' }}>{title}</Typography>
         {!githubLink ? <></> :
@@ -64,8 +64,7 @@ export default () => {
       even though I started my career focused on back-end work. For the updated version of my portfolio, 
       I chose to use React and Material-UI. This allowed me to build the site with modular components, 
       which keeps the code organized and easy to work with. I aimed to write clean code and follow best practices 
-      to make sure the site is not just visually appealing but also well-constructed.
-      The website is also mobile friendly (Using mui bootstrap grid for responsive layout). Feel free to try it out!`,
+      to make sure the site is not just visually appealing but also well-constructed.`,
       languages: ["React", "Typescript", "Javascript", "HTML", "CSS", "MaterialUI"],
       photoLinks: [],
       githubLink: "https://github.com/getjoey/getjoey.github.io",
@@ -75,25 +74,26 @@ export default () => {
       info: `During the holidays, I decided to explore the Unity game engine, known for its ability 
       to run simulations and bring creative ideas to life. I developed a fun little puzzle game that 
       was available for free download on Android. The objective of the game is to manipulate light using 
-      various colored lenses and mirrors to overcome obstacles, collect coins, and energize a black hole. 
-      Unfortunately, due to inactivity, the game has been removed from the Android store.`,
+      various colored lenses and mirrors to overcome obstacles, collect coins, and energize a black hole.`,
       languages: ["C#", "Unity", "Android"],
       photoLinks: [nlpGameScreenshot1,nlpGameScreenshot2,nlpGameScreenshot3,nlpGameScreenshot4,nlpGameScreenshot5,nlpGameScreenshot6],
+      githubLink: "",
+    },
+    {
+      title: "Under Construction",
+      info: `I am adding in more projects (April 8th, 2024)`,
+      languages: [],
+      photoLinks: [],
       githubLink: "",
     }
   ];
 
 
   return (
-    <Box padding={2} component={Paper} elevation={2}>
-      <Box sx={{ textAlign: "center", mb: 2 }}>
-        <Typography variant="h5" component="h2" sx={{ fontWeight: 'bold' }}>Projects</Typography>
+    <Box p={1} paddingLeft={2} paddingRight={2} component={Paper} elevation={2}>
+      <Box sx={{ textAlign: "left", mb: 2, ml:1 }}>
+        <Typography variant="h5" component="h2" sx={{ fontWeight: 'bold' }}>Project Showcase</Typography>
       </Box>
-      {/* <Box>
-            <Typography variant="body1">
-              Under Construction
-            </Typography>
-          </Box> */}
       {projectList.map(p => <Project title={p.title} info={p.info} photoLinks={p.photoLinks} languages={p.languages} githubLink={p.githubLink} />)}
     </Box>
   )

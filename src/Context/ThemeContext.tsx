@@ -28,6 +28,9 @@ export const CustomThemeProviderWithContext = ({ children }: { children: ReactNo
   const theme = createTheme({
     palette: {
       mode: isLightTheme ? 'light' : 'dark',
+      text: {
+        primary: '#E5E4E2', // Default text color
+      },
     },
     typography: {
       fontFamily: 'Arial, sans-serif',

@@ -7,9 +7,11 @@ import { useThemeContext } from '../context/ThemeContext';
 export default () => {
     const { toggleTheme, isLightTheme } = useThemeContext();
 
-    return (
-        <IconButton onClick={toggleTheme}>
-            {isLightTheme ? <DarkModeIcon/> : <LightModeIcon/>}
-        </IconButton>
-    )
+    return <></>;
+    // Disabled for now
+    // return (
+    //     <IconButton onClick={toggleTheme}>
+    //         {isLightTheme ? <DarkModeIcon/> : <LightModeIcon/>}
+    //     </IconButton>
+    // )
 }
